@@ -3,8 +3,11 @@ package com.flavio.workshopmongo.domain;
 import java.io.Serializable;
 import java.util.Date;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import com.flavio.workshopmongo.dto.AuthorDTO;
 
+@Document(collection="post")
 public class Post implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
